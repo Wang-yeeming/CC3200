@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>2577999319</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_memmap.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_ints.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_types.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\i2s.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\test.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\Debug\Exe\test.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\driverlib\crc.h</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\cc3200.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\driverlib\debug.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\gpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\interrupt.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\prcm.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\hw_ints.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\driverlib\ewarm\Release\Exe\driverlib.a</file>
+            <file>$PROJ_DIR$\rom_pin_mux_config.c</file>
+            <file>$PROJ_DIR$\pin_mux_config.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\hw_types.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\hw_memmap.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\rom.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\rom_patch.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\rom_map.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\pin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\hw_gpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_des.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\cpu.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_apps_config.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_wdt.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\wdt.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_adc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\adc.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\des.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\cpu.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_ocp_shared.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\systick.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_nvic.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\interrupt.c</file>
+            <file>$PROJ_DIR$\..\..\ti\CC3200SDK_1.4.0\cc3200-sdk\driverlib\gpio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\utils.h</file>
+            <file>$PROJ_DIR$\..\..\ti\CC3200SDK_1.4.0\cc3200-sdk\driverlib\utils.h</file>
+            <file>$PROJ_DIR$\..\..\ti\CC3200SDK_1.4.0\cc3200-sdk\driverlib\prcm.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_timer.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\timer.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\i2s.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_shamd5.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_mcasp.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\hwspinlock.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2s.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\sdhost.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\wdt.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\udma.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\shamd5.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\spi.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\flash.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2s.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\sdhost.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\pin.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\spi.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\camera.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\timer.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\udma.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\wdt.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\aes.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\aes.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\adc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\camera.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\crc.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\des.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\des.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\shamd5.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\crc.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\i2c.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\sdhost.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\wdt.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\pin.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\shamd5.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\uart.c</file>
+            <file>$PROJ_DIR$\Debug\Exe\test.bin</file>
+            <file>$TOOLKIT_DIR$\inc\c\spi.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\udma.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\systick.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\timer.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\debug.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\rom_pin_mux_config.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\rom_pin_mux_config.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\gpio.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\prcm.c</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\List\test.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\utils.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\hwspinlock.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\aes.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_mmchs.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_dthe.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_flash_ctrl.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\sdhost.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_aes.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_stack_die_ctrl.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_uart.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\camera.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_apps_rcm.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_common_reg.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cpu.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\adc.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\aes.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\crc.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\des.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\flash.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_gprcm.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\i2c.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_hib1p2.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_hib3p3.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\flash.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\driverlib\interrupt.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\uart.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\driverlib\shamd5.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\camera.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\prcm.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\rom_pin_mux_config.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\spi.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\i2c.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\hwspinlock.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_udma.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\cpu.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_mcspi.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\utils.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_camera.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\interrupt.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\udma.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\inc\hw_i2c.h</file>
+        </outputs>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\i2s.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 70</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 0 54 35 19 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\test.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 114</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 99</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 16 23 123 5 107 111 112 113 108</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 157</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25 26 22 27 19 30 29 31 21 18 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\rom_pin_mux_config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 107</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 148</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 106</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 25 26 27 32 31 18 21 28 30 29</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 7 114</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\interrupt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 123</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 160</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 118</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 44 2 131 104 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\hwspinlock.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 117</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 116</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 91 92 20 56 152 146 2 0 1 130 153</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\sdhost.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 71</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 0 120 1 35 19 124</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\wdt.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 79</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 65</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 0 2 36 104 19 37</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\pin.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 72</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 64</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 0 42 31</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\shamd5.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 88</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 67</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 91 92 20 56 152 146 121 1 0 44 53 2 17 142 144</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 77</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 0 2 127 104 19 143</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\spi.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 73</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 68</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 2 0 156 35 19 149</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\udma.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 78</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 66</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 154 1 0 104 19 161</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\systick.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 60</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 44 2 104 19 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\timer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 76</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1 0 50 2 104 19 51</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\gpio.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 151</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 105 1 0 130 104 18 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\prcm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 147</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 0 129 137 139 140 130 21 19 131 141 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\utils.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 158</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 47</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\camera.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 75</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 1 0 159 35 19 145</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 83</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 80</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 0 1 38 35 19 39</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\aes.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 81</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 82</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 91 92 20 56 152 146 125 121 1 0 44 2 119 104 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\crc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 89</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 85</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 91 92 20 56 152 146 121 0 2 14 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\des.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 87</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 86</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 91 92 20 56 152 146 33 121 1 0 2 104 40 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 69</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 62</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 122 0 1 137 139 140 130 126 104 141 47 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\i2c.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 90</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 93 91 92 20 56 152 146 162 1 0 2 104 150 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>E:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c\cpu.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 131</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

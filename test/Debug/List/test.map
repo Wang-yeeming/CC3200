@@ -1,0 +1,216 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.2.214/W32 for ARM                  13/Oct/2019  15:19:34
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =  D:\CC3200\test\Debug\Exe\test.out
+#    Map file     =  D:\CC3200\test\Debug\List\test.map
+#    Command line =
+#        -f C:\Users\lenovo\AppData\Local\Temp\EWAA14.tmp ("E:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\inc\c\driverlib\ewarm\Release\Exe\driverlib.a"
+#        D:\CC3200\test\Debug\Obj\interrupt.o D:\CC3200\test\Debug\Obj\main.o
+#        D:\CC3200\test\Debug\Obj\rom_pin_mux_config.o --no_out_extension -o
+#        D:\CC3200\test\Debug\Exe\test.out --redirect _Printf=_PrintfFullNoMb
+#        --redirect _Scanf=_ScanfFullNoMb --map
+#        D:\CC3200\test\Debug\List\test.map --config "E:\Program Files
+#        (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\config\linker\TexasInstruments\cc3200.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+define block CSTACK with size = 2K, alignment = 8 { section .stack };
+"A0":  place at end of [from 0x2000'4000 to 0x2003'c000] { block CSTACK };
+"A1":  place at start of [from 0x2000'4000 to 0x2003'c000] {
+          ro section .intvec };
+"P1":  place in [from 0x2000'4000 to 0x2003'c000] { ro };
+"P2":  place in [from 0x2000'4000 to 0x2003'c000] { section VTABLE };
+define block CmdTbl { section .cmdtbl };
+"P3":  place in [from 0x2000'4000 to 0x2003'c000] { block CmdTbl };
+define block HEAP with size = 32K, alignment = 8 { };
+"P4":  place in [from 0x2000'4000 to 0x2003'c000] { rw, block HEAP };
+
+No sections matched the following patterns:
+
+  rw               in "P1-P4"
+  section .cmdtbl  in block CmdTbl
+  section .stack   in block CSTACK
+  section VTABLE   in "P1-P4"
+
+
+  Section   Kind         Address   Size  Object
+  -------   ----         -------   ----  ------
+"A1":                              0x40
+  .intvec   ro code  0x2000'4000   0x40  vector_table_M.o [4]
+                   - 0x2000'4040   0x40
+
+"P1-P4":                          0x840
+  .text     ro code  0x2000'4040  0x298  prcm.o [3]
+  .text     ro code  0x2000'42d8    0x6  utils.o [3]
+  .text     ro code  0x2000'42de    0x2  vector_table_M.o [4]
+  .text     ro code  0x2000'42e0  0x11c  rom_pin_mux_config.o [1]
+  .text     ro code  0x2000'43fc   0xb4  pin.o [3]
+  .text     ro code  0x2000'44b0   0x3a  gpio.o [3]
+  .rodata   const    0x2000'44ec  0x100  pin.o [3]
+  .text     ro code  0x2000'45ec   0xc8  main.o [1]
+  .text     ro code  0x2000'46b4   0xa8  interrupt.o [1]
+  .text     ro code  0x2000'475c   0x10  cpu.o [3]
+  .rodata   const    0x2000'476c   0xa8  prcm.o [3]
+  .text     ro code  0x2000'4814   0x1e  cmain.o [4]
+  .text     ro code  0x2000'4832    0x4  low_level_init.o [2]
+  .text     ro code  0x2000'4836    0x4  exit.o [2]
+  .text     ro code  0x2000'483c    0xa  cexit.o [4]
+  .text     ro code  0x2000'4848   0x14  exit.o [5]
+  .rodata   const    0x2000'485c   0x18  interrupt.o [1]
+  .text     ro code  0x2000'4874    0xc  cstartup_M.o [4]
+                   - 0x2000'4880  0x840
+
+"A0":                             0x800
+  CSTACK             0x2003'b800  0x800  <Block>
+    CSTACK  uninit   0x2003'b800  0x800  <Block tail>
+                   - 0x2003'c000  0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+  0x2000'4880  0x2003'b7ff  0x3'6f80
+  0x2003'c000  0x2003'c000       0x1
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
+command line/config:
+    -----------------------------------------------
+    Total:
+
+D:\CC3200\test\Debug\Obj: [1]
+    interrupt.o               168       24
+    main.o                    200
+    rom_pin_mux_config.o      284
+    -----------------------------------------------
+    Total:                    652       24
+
+dl7M_tln.a: [2]
+    exit.o                      4
+    low_level_init.o            4
+    -----------------------------------------------
+    Total:                      8
+
+driverlib.a: [3]
+    cpu.o                      16
+    gpio.o                     58
+    pin.o                     180      256
+    prcm.o                    664      168
+    utils.o                     6
+    -----------------------------------------------
+    Total:                    924      424
+
+rt7M_tl.a: [4]
+    cexit.o                    10
+    cmain.o                    30
+    cstartup_M.o               12
+    vector_table_M.o           66
+    -----------------------------------------------
+    Total:                    118
+
+shb_l.a: [5]
+    exit.o                     20
+    -----------------------------------------------
+    Total:                     20
+
+    Gaps                        4        2
+    Linker created                            2'048
+---------------------------------------------------
+    Grand Total:            1'726      450    2'048
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+?main                   0x2000'4815         Code  Gb  cmain.o [4]
+CPUcpsie                0x2000'475d   0x10  Code  Gb  cpu.o [3]
+CSTACK$$Base            0x2003'b800          --   Gb  - Linker created -
+CSTACK$$Limit           0x2003'c000          --   Gb  - Linker created -
+GPIODirModeSet          0x2000'44b1   0x24  Code  Gb  gpio.o [3]
+GPIOPinRead             0x2000'44d5    0xa  Code  Gb  gpio.o [3]
+GPIOPinWrite            0x2000'44df    0xc  Code  Gb  gpio.o [3]
+IntEnable               0x2000'46c5   0x86  Code  Gb  interrupt.o [1]
+IntMasterEnable         0x2000'46b5    0xa  Code  Gb  interrupt.o [1]
+IntVTableBaseSet        0x2000'46bf    0x6  Code  Gb  interrupt.o [1]
+PRCMCC3200MCUInit       0x2000'413b  0x12c  Code  Gb  prcm.o [3]
+PRCMHIBRegRead          0x2000'4267   0x10  Code  Gb  prcm.o [3]
+PRCMHIBRegWrite         0x2000'4277    0xe  Code  Gb  prcm.o [3]
+PRCMPeripheralClkDisable
+                        0x2000'409d   0x2a  Code  Gb  prcm.o [3]
+PRCMPeripheralClkEnable
+                        0x2000'4063   0x3a  Code  Gb  prcm.o [3]
+PRCMPeripheralReset     0x2000'40c7   0x74  Code  Gb  prcm.o [3]
+PRCMSysResetCauseGet    0x2000'4041   0x22  Code  Gb  prcm.o [3]
+PRCM_PeriphRegsList     0x2000'476c   0xa8  Data  Lc  prcm.o [3]
+PinConfigSet            0x2000'441d   0x5a  Code  Gb  pin.o [3]
+PinModeSet              0x2000'43fd   0x20  Code  Gb  pin.o [3]
+PinMuxConfig            0x2000'42e1  0x11c  Code  Gb  rom_pin_mux_config.o [1]
+PinTypeGPIO             0x2000'4485   0x2c  Code  Gb  pin.o [3]
+Region$$Table$$Base             0x0          --   Gb  - Linker created -
+Region$$Table$$Limit            0x0          --   Gb  - Linker created -
+UtilsDelay              0x2000'42d9    0x6  Code  Gb  utils.o [3]
+__cmain                 0x2000'4815         Code  Gb  cmain.o [4]
+__exit                  0x2000'4849   0x14  Code  Gb  exit.o [5]
+__iar_program_start     0x2000'4875         Code  Gb  cstartup_M.o [4]
+__low_level_init        0x2000'4833    0x4  Code  Gb  low_level_init.o [2]
+__vector_table          0x2000'4000         Data  Gb  vector_table_M.o [4]
+_call_main              0x2000'4821         Code  Gb  cmain.o [4]
+_exit                   0x2000'483d         Code  Gb  cexit.o [4]
+_main                   0x2000'482f         Code  Gb  cmain.o [4]
+boardInit               0x2000'45ed   0x18  Code  Lc  main.o [1]
+exit                    0x2000'4837    0x4  Code  Gb  exit.o [2]
+g_pulEnRegs             0x2000'485c   0x18  Data  Lc  interrupt.o [1]
+g_ulPinToPadMap         0x2000'44ec  0x100  Data  Lc  pin.o [3]
+main                    0x2000'4605   0x94  Code  Gb  main.o [1]
+
+
+[1] = D:\CC3200\test\Debug\Obj
+[2] = dl7M_tln.a
+[3] = driverlib.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  1'726 bytes of readonly  code memory
+    450 bytes of readonly  data memory
+  2'048 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
